@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping Cart | ERA</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR (SAME AS HOME, PATHS FIXED) -->
+<header>
+  <div class="navbar">
+      <div class="logo">
+          <a href="../index.html">ERA</a>
+      </div>
+      <nav>
+          <ul>
+              <li>
+                  <a href="#">Collection</a>
+                  <div class="dropdown">
+                      <a href="special-sale.html">Special Sale</a>
+                      <a href="gifts.html">Gifts</a>
+                  </div>
+              </li>
+
+              <li>
+                  <a href="#">All Products</a>
+                  <div class="dropdown">
+                      <a href="mens.html">Men’s</a>
+                      <a href="womens.html">Women’s</a>
+                      <a href="smart.html">Smart Watches</a>
+                      <a href="automatic.html">Automatic</a>
+                  </div>
+              </li>
+
+              <li><a href="cart.html">Shopping Cart</a></li>
+              <li><a href="brand.html">Brand & Content</a></li>
+              <li><a href="customer.html">Customer Service</a></li>
+          </ul>
+      </nav>
+  </div>
+</header>
+
+<section class="banner" style="background-image:url('../images/checkout.jpg')">
+  <h1>CHECKOUT</h1>
+</section>
+
+<section class="container">
+  <form onsubmit="orderPlaced(event)">
+    <input type="text" placeholder="Full Name" required>
+    <input type="text" placeholder="Address" required>
+    <input type="text" placeholder="Card Number" required>
+    <input type="text" placeholder="Expiry Date" required>
+    <input type="text" placeholder="CVV" required>
+    <button type="submit">Pay Now</button>
+  </form>
+</section>
+
+<footer>© ERA Watches</footer>
+
+<script>
+function orderPlaced(e) {
+  e.preventDefault();
+  alert("✅ Payment successful! Your order has been placed.");
+}
+</script>
+
+</body>
+</html>
