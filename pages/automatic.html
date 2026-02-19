@@ -3,42 +3,45 @@
 <head>
     <title>Autometic Watches | ERA</title>
     <link rel="stylesheet" href="../css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<!-- NAVBAR (SAME AS HOME, PATHS FIXED) -->
 <header>
-    <div class="navbar">
-        <div class="logo">
-            <a href="../index.html">ERA</a>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Collection</a>
-                    <div class="dropdown">
-                        <a href="special-sale.html">Special Sale</a>
-                        <a href="gifts.html">Gifts</a>
-                    </div>
-                </li>
-
-                <li>
-                    <a href="#">All Products</a>
-                    <div class="dropdown">
-                        <a href="mens.html">Men’s</a>
-                        <a href="womens.html">Women’s</a>
-                        <a href="smart.html">Smart Watches</a>
-                        <a href="automatic.html">Automatic</a>
-                    </div>
-                </li>
-
-                <li><a href="cart.html">Shopping Cart</a></li>
-                <li><a href="brand.html">Brand & Content</a></li>
-                <li><a href="customer.html">Customer Service</a></li>
-            </ul>
-        </nav>
+    <nav>
+    <div class="logo">
+        <a href="index.html">ERA</a>
     </div>
+
+    <!-- Hidden checkbox -->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- Hamburger icon -->
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+    <ul class="nav-links">
+        <li class="dropdown">
+            <a href="#">Collection</a>
+            <ul class="dropdown-content">
+                <li><a href="special-sale.html">Special Sale</a></li>
+                <li><a href="gifts.html">Gifts</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">All Products</a>
+            <ul class="dropdown-content">
+                <li><a href="mens.html">Men's</a></li>
+                <li><a href="womens.html">Women's</a></li>
+                <li><a href="smartwatches.html">Smartwatches</a></li>
+                <li><a href="automatic.html">Automatic</a></li>
+            </ul>
+        </li>
+
+        <li><a href="cart.html">Shopping Cart</a></li>
+        <li><a href="brand.html">Brand & Content</a></li>
+        <li><a href="customer-service.html">Customer Service</a></li>
+    </ul>
+</nav>
 </header>
 
 <section class="banner" style="background-image:url('../images/auto banner.jpg')">
@@ -71,4 +74,5 @@
 
 </body>
 </html>
+
 
