@@ -236,28 +236,45 @@ footer {
     color: black;
 }
 /* ========================= */
-/* CART PAGE */
+/* CART FIX SYSTEM */
 /* ========================= */
 
+/* Hide all cart items */
 .cart-item {
+    display: none;
     text-align: center;
-    margin: 20px;
+    margin: 30px;
 }
 
+/* Show only selected item */
+.cart-item:target {
+    display: block;
+}
+
+/* Hide empty message when product selected */
+.cart-item:target ~ .empty-message {
+    display: none;
+}
+
+/* Hide total & checkout by default */
+.total,
 .checkout-btn {
-    background: black;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 15px;
+    display: none;
+    text-align: center;
 }
 
-.checkout-btn:hover {
-    background: gold;
-    color: black;
+/* Show them only when product selected */
+.cart-item:target ~ .total,
+.cart-item:target ~ .checkout-btn {
+    display: block;
 }
 
+.empty-message {
+    text-align: center;
+    margin: 40px;
+    font-size: 18px;
+    color: #777;
+}
 
 /* ========================= */
 /* POPUP STYLING */
@@ -353,6 +370,7 @@ footer {
     background: gold;
     color: black;
 }
+
 
 
 
