@@ -31,61 +31,55 @@
           </ul>
       </nav>
   </div>
-</header>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cart | ERA</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
 
-<section class="banner" style="background-image:url('../images/checkout.jpg')">
-  <h1>CHECKOUT</h1>
-</section>
-
-<h2 style="text-align:center; margin-top:30px;">Your Cart</h2>
+<h1 style="text-align:center;">Shopping Cart</h1>
 
 <p class="empty-message">Your cart is empty.</p>
 
-<!-- Cart items hidden by default -->
-<div id="nightowl" class="cart-item">
+<!-- MEN PRODUCT -->
+<div id="mens" class="cart-item">
     <img src="../images/mens1.jpg" width="150">
     <h3>ERA Night Owl</h3>
     <p>Price: £199</p>
 </div>
 
-<div id="classic" class="cart-item">
-    <img src="../images/mens2.jpg" width="150">
-    <h3>ERA Classic</h3>
+<!-- WOMEN PRODUCT -->
+<div id="women" class="cart-item">
+    <img src="../images/women1.jpg" width="150">
+    <h3>ERA Rose Gold</h3>
     <p>Price: £249</p>
 </div>
 
-<div id="darkgrace" class="cart-item">
-    <img src="../images/mens4.jpg" width="150">
-    <h3>ERA Dark Grace</h3>
-    <p>Price: £349</p>
-</div>
-
-<h3 class="total">Total: £199</h3>
-<a href="#payment-popup" class="checkout-btn">Proceed to Payment</a>
+<a href="#payment" class="checkout-btn">Proceed to Payment</a>
 
 <!-- PAYMENT POPUP -->
-<div id="payment-popup" class="popup">
-    <div class="popup-content">
-        <h2>Payment Details</h2>
-        <input type="text" placeholder="Card Number"><br><br>
-        <input type="text" placeholder="Expiry Date"><br><br>
-        <input type="text" placeholder="CVV"><br><br>
+<div id="payment" class="popup">
+  <div class="popup-content">
+    <h2>Payment Details</h2>
+    <input type="text" placeholder="Card Number"><br><br>
+    <input type="text" placeholder="Expiry Date"><br><br>
+    <input type="text" placeholder="CVV"><br><br>
 
-        <a href="#success-popup" class="pay-btn">Pay Now</a>
-        <a href="#" class="close-btn">Cancel</a>
-    </div>
+    <a href="#success" class="pay-btn">Pay Now</a>
+    <a href="#" class="close-btn">Cancel</a>
+  </div>
 </div>
 
 <!-- SUCCESS POPUP -->
-<div id="success-popup" class="popup">
-    <div class="popup-content">
-        <h2>Payment Successful!</h2>
-        <p>Thank you for shopping with ERA.</p>
-        <a href="../index.html" class="pay-btn">Return to Home</a>
-    </div>
+<div id="success" class="popup">
+  <div class="popup-content">
+    <h2>Payment Successful!</h2>
+    <p>Thank you for shopping with ERA.</p>
+    <a href="../index.html" class="pay-btn">Return Home</a>
+  </div>
 </div>
-
-<footer>© 2026 ERA Watches</footer>
 
 </body>
 </html>
