@@ -178,3 +178,45 @@ footer {
     transform: scale(1.05);
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
+/* Hide checkbox */
+.product-toggle {
+    display: none;
+}
+
+/* Make image clickable */
+.product img {
+    width: 250px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+/* Hide Add to Cart initially */
+.add-cart {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Show when image clicked */
+.product-toggle:checked ~ .add-cart {
+    display: block;
+}
+
+/* Button styling */
+.add-cart a {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.add-cart a:hover {
+    background: gold;
+    color: black;
+}
+
