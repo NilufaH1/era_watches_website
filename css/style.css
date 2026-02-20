@@ -219,4 +219,21 @@ footer {
     background: gold;
     color: black;
 }
+.cart-item {
+    text-align: center;
+    margin: 20px;
+}
+
+.checkout-btn {
+    background: black;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+}
+
+.checkout-btn:hover {
+    background: gold;
+    color: black;
+}
+
 
