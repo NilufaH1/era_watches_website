@@ -47,37 +47,46 @@
 <h2>Your Cart</h2>
 
 <div class="cart-item">
-    <img src="images/mens-watch1.jpg" width="150">
-    <h3>Classic Men's Watch</h3>
-    <p>Price: $199</p>
+    <img src="../images/mens1.jpg" width="150">
+    <h3>ERA Night Owl</h3>
+    <p>Price: £199</p>
 </div>
 
-<h3>Total: $199</h3>
+<h3>Total: £199</h3>
 
-<a href="checkout.html" class="checkout-btn">Proceed to Payment</a>
+<!-- Button to open popup -->
+<a href="#payment-popup" class="checkout-btn">Proceed to Payment</a>
 
-<section class="container">
-  <form onsubmit="orderPlaced(event)">
-    <input type="text" placeholder="Full Name" required>
-    <input type="text" placeholder="Address" required>
-    <input type="text" placeholder="Card Number" required>
-    <input type="text" placeholder="Expiry Date" required>
-    <input type="text" placeholder="CVV" required>
-    <button type="submit">Pay Now</button>
-  </form>
-</section>
+
+<!-- PAYMENT POPUP -->
+<div id="payment-popup" class="popup">
+    <div class="popup-content">
+        <h2>Payment Details</h2>
+
+        <input type="text" placeholder="Card Number"><br><br>
+        <input type="text" placeholder="Expiry Date"><br><br>
+        <input type="text" placeholder="CVV"><br><br>
+
+        <a href="#success-popup" class="pay-btn">Pay Now</a>
+        <a href="#" class="close-btn">Cancel</a>
+    </div>
+</div>
+
+
+<!-- SUCCESS POPUP -->
+<div id="success-popup" class="popup">
+    <div class="popup-content">
+        <h2>Payment Successful!</h2>
+        <p>Thank you for shopping with ERA.</p>
+        <a href="../index.html" class="pay-btn">Return to Home</a>
+    </div>
+</div>
 
 <footer>© ERA Watches</footer>
 
-<script>
-function orderPlaced(e) {
-  e.preventDefault();
-  alert("✅ Payment successful! Your order has been placed.");
-}
-</script>
-
 </body>
 </html>
+
 
 
 
