@@ -370,7 +370,36 @@ footer {
     background: gold;
     color: black;
 }
+/* CART TARGET SHOW/HIDE */
 
+.cart-item {
+    display: none;
+    text-align: center;
+    margin: 30px;
+}
 
+.cart-item:target {
+    display: block;
+}
 
+.cart-item:target ~ .empty-message {
+    display: none;
+}
+
+.total,
+.checkout-btn {
+    display: none;
+}
+
+.cart-item:target ~ .total,
+.cart-item:target ~ .checkout-btn {
+    display: block;
+}
+
+.empty-message {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+    color: #777;
+}
 
