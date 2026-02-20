@@ -313,6 +313,46 @@ footer {
     text-decoration: none;
     color: red;
 }
+.product {
+    position: relative;
+    text-align: center;
+}
+
+.product-toggle {
+    display: none;
+}
+
+.product-image img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.add-cart {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 20px);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.product-toggle:checked ~ .add-cart {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.add-cart a {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.add-cart a:hover {
+    background: gold;
+    color: black;
+}
 
 
 
